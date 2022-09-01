@@ -3,9 +3,10 @@ import Int "mo:base/Int";
 import Iter "mo:base/Iter";
 import Debug "mo:base/Debug";
 
+// 以模块形式供外部引用
 module Quicksort {
-    
-    public func quicksort(arr : [var Int]) : (){
+
+    public func quicksort(arr : [var Int]) : () {
         if(arr.size() == 0){
             return;
         };
